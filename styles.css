@@ -1,3 +1,8 @@
+body{
+    color:white;
+}
+
+
 #container{
     border:solid black 3px;
     width:100%;
@@ -6,19 +11,30 @@
     flex-direction:row;
     align-content:center;
     justify-content:center;
-    align-items:center;
+    align-items:flex-end;
+    margin-bottom: 30px;
     font-size: 25px;
+    background-image:url("background.jpg");
+    background-position: absolute;
+    background-size:100%;
+    background-position: 50% 50%;
+    background-repeat:no-repeat;
+    background-color:black;
 }
 
 #content input{
     height:30px;
-    border: 1px black solid;
+    border: 1px white solid;
     display:inline-block;
+    box-shadow: 0 19px 38px rgba(255, 255, 255, 0.3), 0 15px 12px rgba(255, 255, 255, 0.22);
+    margin-right:5px;
 }
 
 #content #play-button{
 margin:auto;
 margin-top: 20px;
+width: 27vw;
+margin-bottom:30px;
 
 }
 
@@ -27,7 +43,7 @@ margin-top: 20px;
         color: #fff !important;
         text-transform: uppercase;
         text-decoration: none;
-        background: #ed3330;
+        background: #48e0cc;
         padding: 20px;
         border-radius: 5px;
         display: inline-block;

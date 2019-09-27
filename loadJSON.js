@@ -1,26 +1,25 @@
+function loadJSON(file, callback) {
 
+    let xobj = new XMLHttpRequest();
+    xobj.overrideMimeType("application/json");
+    xobj.open('GET', file, false);
+    xobj.onreadystatechange = function() {
+        if (xobj.readyState == 4 && xobj.status == "200") {
 
-
-function loadJSON(callback) {   
-
-    var xobj = new XMLHttpRequest();
-        xobj.overrideMimeType("application/json");
-    xobj.open('GET', 'C:\Users\Lucas\OneDrive\Skrivbord\appQuiz\mock_data.json', true); // Replace 'my_data' with the path to your file
-    xobj.onreadystatechange = function () {
-          if (xobj.readyState == 4 && xobj.status == "200") {
-            // Required use of an anonymous callback as .open will NOT return a value but simply returns undefined in asynchronous mode
+            // .open will NOT return a value but simply returns undefined in async mode so use a callback
             callback(xobj.responseText);
-          }
-    };
-    xobj.send(null);  
- }
-  
- function init() {
-    loadJSON(function(response) {
-     // Parse JSON string into object
-       var actual_JSON = JSON.parse(response);
-       console.log(actual_JSON);
-       
-    });
-   }
 
+        }
+    }
+    xobj.send(null);
+
+}
+
+function getJSON (file) {
+    let result = null;
+    // Call to function with anonymous callback
+    loadJSON(file, function(response) {
+        result = JSON.parse(response);
+    });
+    return result;
+}

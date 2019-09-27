@@ -50,8 +50,9 @@ const quiz = new Quiz([
 //quiz.loadJsonQuestions(json)
 quiz.render();
 
-//let = getJSON ("url till mocky");
+let x = getJSON("https://questions.free.beeceptor.com/");
 
+console.log(x);
 
 
 
