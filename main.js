@@ -50,7 +50,12 @@ const quiz = new Quiz([
 //quiz.loadJsonQuestions(json)
 quiz.render();
 
-let x = getJSON('https://www.mocky.io/v2/5d8dc28b310000cf032b5016')
-console.log(x);
+//let = getJSON ("url till mocky");
+
+
+
+
+
 
 })();
+

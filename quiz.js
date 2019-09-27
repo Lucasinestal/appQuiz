@@ -26,6 +26,7 @@ class Quiz {
     filter(count) {
         if (parseInt(count.value) > this.questions.length) {
             this.questions;
+            
         }
         this.questions = this.questions.slice(0, parseInt(count.value));
     }
@@ -169,12 +170,15 @@ class Quiz {
     renderStepButtons() {
         const content = document.getElementById("content");
         const nextButton = document.createElement("button");
+        nextButton.id = "nBtn"
         nextButton.innerHTML = "Nästa";
         nextButton.onclick = () => {
             this.toggleQuestion(false);
             this.nextQuestion();
+        
         }
         const prevButton = document.createElement("button");
+        prevButton.id = "pBtn"
         prevButton.innerHTML = "Tillbaka";
         prevButton.onclick = () => {
             this.toggleQuestion(true);
@@ -185,7 +189,7 @@ class Quiz {
             content.append(nextButton);
         }
         else if (this.currentQuestion > 0 && this.currentQuestion !== this.questions.length - 1) {
-            debugger;
+            
             content.append(prevButton);
             content.append(nextButton);
         }
@@ -207,9 +211,10 @@ class Quiz {
         const usernameInput = document.createElement("input");
         usernameInput.id = "username";
         usernameInput.type = "text";
-        usernameInput.placeholder = "Ditt namn";
+        usernameInput.placeholder = " Ditt namn";
         usernameInput.classList.add("form-control");
         usernameInput.onchange = () => this.setUsername(usernameInput);
+        
 
 
 
@@ -217,7 +222,7 @@ class Quiz {
         const filterInput = document.createElement("input");
         filterInput.id = "filter";
         filterInput.type = "number";
-        filterInput.placeholder = "Hur många frågor ska visas?"
+        filterInput.placeholder = " Välj antal frågor"
         filterInput.classList.add("form-control");
         filterInput.onchange = () => this.filter(filterInput);
 
@@ -225,6 +230,7 @@ class Quiz {
         const playButton = document.createElement('button');
         playButton.id = 'play-button';
         playButton.innerHTML = 'Starta';
+        playButton.style.display = 'block';
         playButton.classList.add("btn.btn-primary");
         playButton.onclick = () => this.startQuiz();
 
@@ -242,6 +248,7 @@ class Quiz {
         label.innerHTML = `Du hade ${this.correctAnswer} av ${this.questions.length} rätt`;
 
         content.append(label);
+        
     }
     renderPlayView() {
 

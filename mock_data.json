@@ -1,9 +1,11 @@
+
 {
-    
-    "category": "",
-    "question": "",
-    "correctAnswer": "",
-    "options" : [
-        "hej"
-    ]
+    "category":["Geografi"],
+        "Question":"Vilket är världens högsta berg?",
+            "correctAnswer":"Mount Everest",
+                "options":["Mount Everest","K2","Kilamanjaro"]
 }
+    
+
+
+

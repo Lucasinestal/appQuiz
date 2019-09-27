@@ -5,81 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
+    <link rel="stylesheet" href="styles.css">
     <script type="text/javascript" src="quiz.js"></script>
     <script type="text/javascript" src="question.js"></script>
 </head>
 
 <body>
-    <div id="content">
+    <div id="container">
+        <div id="content">
 
+        </div>
     </div>
-
-    <script>
-        (function () {
-
-            $.getJSON("mock_data.json", function(json) {
-            console.log(json);
-            /*
-            var tData = JSON.parse('./mock_data.json');
-            console.log(tData)
-            */
-            const question1 = new Question(
-                "Geografi",
-                "Vilket är världens högsta berg?",
-                "Mount Everest",
-                [
-                    "Mount Everest",
-                    "K2",
-                    "Kilamanjaro"
-                ]
-            );
-            const question2 = new Question(
-                "Biologi",
-                "Vad är betecking för guld?",
-                "AG",
-                [
-                    "ZE",
-                    "AG",
-                    "kY"
-                ]
-            );
-            const question3 = new Question(
-                "Biologi2",
-                "Vad är betecking för guld?",
-                "AG",
-                [
-                    "ZE",
-                    "AG",
-                    "kY"
-                ]
-            );
-            const question4 = new Question(
-                "Biologi3",
-                "Vad är betecking för guld?",
-                "AG",
-                [
-                    "ZE",
-                    "AG",
-                    "kY"
-                ]
-            );
-
-            const quiz = new Quiz([
-                question1,
-                question2,
-                question3,
-                question4
-            ]);
-            //quiz.loadJsonQuestions(json)
-            quiz.render();
-
-
-
-        })();
-
-
-    </script>
+   
+<script src="main.js"></script>
+<script src="loadJSON.js"></script>
 
 </body>
 
