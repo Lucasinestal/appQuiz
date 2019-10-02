@@ -14,7 +14,7 @@ body{
     align-items:flex-end;
     margin-bottom: 30px;
     font-size: 25px;
-    background-image:url("background.jpg");
+    background-image:url("images/background.jpg");
     background-position: absolute;
     background-size:100%;
     background-position: 50% 50%;
@@ -61,12 +61,42 @@ margin-bottom:30px;
 
 #nBtn{
     
-    float:right;
+        float:right;
 
 }
 
 #pBtn{
     
-    float:left;
+        float:left;
 
 }
+
+#username {
+        width:100%;
+        text-align:center;
+}
+
+#filter{
+        width:100%;
+        text-align:center;
+}
+
+#question-list{
+    background-color:white;
+    color:black;
+    font-family:Impact, 'Arial Narrow Bold', sans-serif;
+    padding: 20%;
+    
+}
+
+#question-list {
+    background-color:rgb(56, 41, 52);
+    color:white;
+    border: 3px solid #48e0cc;;
+   
+}
+
+#o {
+    
+}
+

@@ -211,7 +211,7 @@ class Quiz {
         const usernameInput = document.createElement("input");
         usernameInput.id = "username";
         usernameInput.type = "text";
-        usernameInput.placeholder = " Ditt namn";
+        usernameInput.placeholder = " Name";
         usernameInput.classList.add("form-control");
         usernameInput.onchange = () => this.setUsername(usernameInput);
         
@@ -222,14 +222,14 @@ class Quiz {
         const filterInput = document.createElement("input");
         filterInput.id = "filter";
         filterInput.type = "number";
-        filterInput.placeholder = " Välj antal frågor"
+        filterInput.placeholder = " Select number of questions"
         filterInput.classList.add("form-control");
         filterInput.onchange = () => this.filter(filterInput);
 
 
         const playButton = document.createElement('button');
         playButton.id = 'play-button';
-        playButton.innerHTML = 'Starta';
+        playButton.innerHTML = 'Play';
         playButton.style.display = 'block';
         playButton.classList.add("btn.btn-primary");
         playButton.onclick = () => this.startQuiz();
