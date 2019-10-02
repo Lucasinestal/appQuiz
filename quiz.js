@@ -139,7 +139,10 @@ class Quiz {
             const wrapper = document.createElement('div');
             wrapper.style.display = 'block';
             const label = document.createElement("label");
-            label.innerHTML = o;
+            //label.innerHTML = o;
+
+            const p = document.createElement('span');
+            p.innerHTML = o;
 
             const checkbox = document.createElement("input");
             checkbox.type = "checkbox";
@@ -149,7 +152,8 @@ class Quiz {
             checkbox.onchange = () => this.checkAnswer(checkbox, o);
 
             wrapper.append(label);
-            wrapper.append(checkbox)
+            wrapper.append(checkbox);
+            wrapper.append(p);
             questionList.append(wrapper);
         });
 

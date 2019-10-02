@@ -1,4 +1,4 @@
-let x = getJSON("https://jsonquestions.free.beeceptor.com");
+let x = getJSON("https://questionsjson.free.beeceptor.com");
 (function () {
 /*
 const question = new Question(

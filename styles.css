@@ -21,6 +21,9 @@ body{
     background-repeat:no-repeat;
     background-color:black;
 }
+#content{
+       
+}
 
 #content input{
     height:30px;
@@ -30,11 +33,13 @@ body{
     margin-right:5px;
 }
 
+
 #content #play-button{
 margin:auto;
 margin-top: 20px;
-width: 27vw;
+width: 100%;
 margin-bottom:30px;
+
 
 }
 
@@ -44,10 +49,11 @@ margin-bottom:30px;
         text-transform: uppercase;
         text-decoration: none;
         background: #48e0cc;
-        padding: 20px;
+        padding:  20px;
+        width: 50%;
         border-radius: 5px;
         display: inline-block;
-        border: none;
+        border: solid 3px;;
         transition: all 0.4s ease 0s;
         }
 #content button:hover{
@@ -62,13 +68,18 @@ margin-bottom:30px;
 #nBtn{
     
         float:right;
-
+        margin:auto;
+        margin-top: 20px;
+        width: 100%;
+        margin-bottom:30px;
 }
 
 #pBtn{
-    
         float:left;
-
+        margin:auto;
+        margin-top: 20px;
+        width: 100%;
+        margin-bottom:30px;
 }
 
 #username {
@@ -82,21 +93,50 @@ margin-bottom:30px;
 }
 
 #question-list{
-    background-color:white;
+    background-color:rgba(212, 199, 199, 0.1);
     color:black;
     font-family:Impact, 'Arial Narrow Bold', sans-serif;
-    padding: 20%;
+    padding: 10%;
+    margin:auto;
+    
+    
     
 }
 
 #question-list {
-    background-color:rgb(56, 41, 52);
+    
     color:white;
     border: 3px solid #48e0cc;;
    
 }
 
-#o {
-    
+@media screen and (max-width: 650px){
+        #question-list{
+                font-size: 20px;
+        }
+        
 }
+
+@media screen and (max-width: 520px){
+        #question-list{
+                font-size: 18px;
+        }
+        
+}
+
+@media screen and (max-width: 461px){
+        #question-list{
+                font-size: 15px;
+        }
+        
+}
+
+@media screen and (max-width: 391px){
+        #question-list{
+                font-size: 14px;
+        }
+        
+}
+
+
 
