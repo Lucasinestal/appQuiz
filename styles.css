@@ -1,45 +1,69 @@
 body{
-    color:white;
+    color:black;
+    font-family: 'Big Shoulders Display', cursive;
+    
+    
 }
+
 
 
 #container{
-    border:solid black 3px;
-    width:100%;
-    height:98vh;
-    display:flex;
-    flex-direction:row;
-    align-content:center;
-    justify-content:center;
-    align-items:flex-end;
-    margin-bottom: 30px;
-    font-size: 25px;
-    background-image:url("images/background.jpg");
-    background-position: absolute;
-    background-size:100%;
-    background-position: 50% 50%;
-    background-repeat:no-repeat;
-    background-color:black;
+    
+        height:98vh;
+        display:flex;
+        flex-direction:row;
+        align-content:center;
+        justify-content:center;
+        align-items:flex-end;
+        margin-bottom: 30px;
+        font-size: 25px;
+        background-image: url(images/quiz.jpg);
+        background-position:absolute;
+        background-size:50%;
+        background-position: 50% 15%;
+        background-repeat:no-repeat;
+        background-color:white;
 }
-#content{
-       
+#container #score{
+        border:1px solid black;
+        padding 10px;
+        justify-content:flex-end;
 }
 
+#content{
+         
+        display:inline;
+        justify-content:center;
+        align-items:center;
+}
+
+
 #content input{
-    height:30px;
-    border: 1px white solid;
-    display:inline-block;
-    box-shadow: 0 19px 38px rgba(255, 255, 255, 0.3), 0 15px 12px rgba(255, 255, 255, 0.22);
-    margin-right:5px;
+        height:30px;
+        border: 1px white solid;
+        display:inline-block;
+        box-shadow: 0 19px 38px rgba(255, 255, 255, 0.3), 0 15px 12px rgba(255, 255, 255, 0.22);
+        margin-right:5px;
+        -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+        -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
 }
 
 
 #content #play-button{
-margin:auto;
-margin-top: 20px;
-width: 100%;
-margin-bottom:30px;
+        margin:auto;
+        margin-top: 20px;
+        width: 100%;
+        margin-bottom:30px;
+        font-family: 'Big Shoulders Display', cursive;
+        font-size: 25px;
 
+
+}
+
+#complete-quiz-button{
+        margin-top: 20px;
+        font-family: 'Big Shoulders Display', cursive;
+        font-size: 20px;
 
 }
 
@@ -48,7 +72,7 @@ margin-bottom:30px;
         color: #fff !important;
         text-transform: uppercase;
         text-decoration: none;
-        background: #48e0cc;
+        background: #00ccff;
         padding:  20px;
         width: 50%;
         border-radius: 5px;
@@ -72,9 +96,14 @@ margin-bottom:30px;
         margin-top: 20px;
         width: 100%;
         margin-bottom:30px;
+        font-family: 'Big Shoulders Display', cursive;
+        font-size: 20px;
+
 }
 
 #pBtn{
+        font-family: 'Big Shoulders Display', cursive;
+        font-size: 20px;
         float:left;
         margin:auto;
         margin-top: 20px;
@@ -93,47 +122,62 @@ margin-bottom:30px;
 }
 
 #question-list{
-    background-color:rgba(212, 199, 199, 0.1);
-    color:black;
-    font-family:Impact, 'Arial Narrow Bold', sans-serif;
-    padding: 10%;
-    margin:auto;
+        color:black;
+        font-family: 'Big Shoulders Display', cursive;
+        font-size: 30px;
+        padding: 10%;
+        margin:auto;
+        color:white; 
+        -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+        -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+        background-color:rgba(17, 16, 16, 0.5);
+        border:3px solid
     
     
     
 }
 
-#question-list {
-    
-    color:white;
-    border: 3px solid #48e0cc;;
+#question-list:hover {
+        background-color:rgba(17, 16, 16, 0.5);
+        border: 3px solid #00ccff; 
+        color:white;  
+        -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+        -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
    
+}
+
+
+        
 }
 
 @media screen and (max-width: 650px){
         #question-list{
-                font-size: 20px;
+                
+                font-size: 30px;
+        }
+        #content{
+                width: 90%;
         }
         
 }
 
 @media screen and (max-width: 520px){
         #question-list{
-                font-size: 18px;
+                font-size: 25px;
         }
         
 }
 
 @media screen and (max-width: 461px){
         #question-list{
-                font-size: 15px;
+                font-size: 20px;
         }
         
 }
 
 @media screen and (max-width: 391px){
         #question-list{
-                font-size: 14px;
+                font-size: 20px;
         }
         
 }

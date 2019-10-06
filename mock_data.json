@@ -2,7 +2,7 @@
     {
            "question":" Grand Central Terminal, Park Avenue, New York is the world's ",
                "options":["largest railway station","highest railway station","longest railway station","none of the above"],
-                   "correctAnswer":"largest railway station"
+                   "correctAnswer":":["largest railway station","highest railway station","longest railway station","none of the above"]
     }
    ,{
            "question":" First China War was fought between ",
@@ -26,33 +26,29 @@
                  "correctAnswer":"for coagulation of mud particles"
      }
     ,{
-           "question":" Grand Central Terminal, Park Avenue, New York is the world's ",
-               "options":["largest railway station","highest railway station","longest railway station","none of the above"],
-                   "correctAnswer":"largest railway station"
+           "question":" The language spoken by the people by Pakistan is ?",
+               "options":["Hindi","Palauan","Sindhi","Nauruan"],
+                   "correctAnswer":"Sindhi"
       }
      ,{
-           "question":" First China War was fought between ",
-               "options":["China and Britain","China and France","China and Egypt","China and Greece"],
-                 "correctAnswer":"China and Britain"
+           "question":"  Who among the following has won the FIFA Player of the Year 2019? ",
+               "options":["Virgil van Dijk","Cristiano Ronaldo","Lionel Messi","Neymar"],
+                 "correctAnswer":"Lionel Messi"
       }
      ,{
-           "question":"For which of the following disciplines is Nobel Prize awarded?",
-               "options":["Physics and Chemistry","Physiology or Medicine","Literature, Peace and Economics","All of the above"],
-                 "correctAnswer":"All of the above"
+           "question":"When was Carthage destroyed?",
+               "options":["149 B.C.","323 B.C.","44 A.D.","70 A.D."],
+                 "correctAnswer":"149 B.C."
       }     
      ,{
-           "question":"During World War II, when did Germany attack France?",
-               "options":["1940","1941","1942","1943"],
-                 "correctAnswer":"1940"
+           "question":"What is the height of the proposed Burj Tower in Dubai?",
+               "options":["400 metres","520 metres","600 metres"," 800 metres"],
+                 "correctAnswer":" 800 metres"
        }
       ,{
-           "question":"For purifying drinking water alum is used",
-               "options":["for coagulation of mud particles","to kill bacteria","to remove salts","to remove gases"],
-                 "correctAnswer":"for coagulation of mud particles"
+           "question":"The islands Hokkaido, Honshu, Shikoku and Kyushu are part of which country?",
+               "options":[" Philippines","South Korea","Japan","Vietnam"],
+                 "correctAnswer":"Japan"
        }
-      ,{
-           "question":"For purifying drinking water alum is used",
-               "options":["for coagulation of mud particles","to kill bacteria","to remove salts","to remove gases"],
-                 "correctAnswer":"for coagulation of mud particles"
-       }
+      
    ]

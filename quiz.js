@@ -1,4 +1,4 @@
-
+//  Ibland kan ett alternativ vara rätt, ibland flera.
 class Quiz {
     constructor(questions) {
         this.username = null;
@@ -107,7 +107,7 @@ class Quiz {
            
             const completeButton = document.createElement('button');
             completeButton.id = 'complete-quiz-button';
-            completeButton.innerHTML = "Slutför"
+            completeButton.innerHTML = "Complete"
             completeButton.classList.add('btn-success');
             completeButton.onclick = () => this.render();
             content.append(completeButton);
@@ -183,7 +183,7 @@ class Quiz {
         }
         const prevButton = document.createElement("button");
         prevButton.id = "pBtn"
-        prevButton.innerHTML = "Tillbaka";
+        prevButton.innerHTML = "Back";
         prevButton.onclick = () => {
             this.toggleQuestion(true);
             this.nextQuestion();
@@ -250,8 +250,8 @@ class Quiz {
 
         const label = document.createElement('label');
         label.innerHTML = `Du hade ${this.correctAnswer} av ${this.questions.length} rätt`;
-
-        content.append(label);
+        label.id ="scoreLabel"
+        score.append(label);
         
     }
     renderPlayView() {
