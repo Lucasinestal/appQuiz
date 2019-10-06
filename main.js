@@ -1,8 +1,8 @@
-let x = getJSON("https://latestquestion.free.beeceptor.com");
+let x = getJSON("https://appquiz.free.beeceptor.com/");
 (function () {
     let questionArray = [];
     x.forEach((question) => {
-        questionArray.push(new Question("", question.question, question.correctAnswer, question.options));
+        questionArray.push(new Question("", question.question, question.correctAnswers, question.options));
 })
 const quiz = new Quiz(
     questionArray
