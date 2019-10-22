@@ -1,4 +1,4 @@
-let x = getJSON("https://appquiz.free.beeceptor.com/");
+let x = getJSON("https://questionnew.free.beeceptor.com");
 (function () {
     let questionArray = [];
     x.forEach((question) => {
@@ -9,7 +9,7 @@ const quiz = new Quiz(
  );
 
  quiz.render();
-
-
+ 
+ 
 })();
 

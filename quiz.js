@@ -1,4 +1,6 @@
 //  Ibland kan ett alternativ vara rätt, ibland flera.
+const filterInput = document.createElement("input");
+
 class Quiz {
     constructor(questions) {
         this.username = null;
@@ -10,13 +12,15 @@ class Quiz {
         this.playMode = true;
     }
     render() {
+        let final = this.questions[this.questions.length - 1]
         if (this.username === null) {
             this.renderInitView();
         }
         else if (this.playMode === true && this.correctAnswer + this.falseAnswer < this.questions.length) {
             this.renderPlayView();
         }
-        else if (this.correctAnswer + this.falseAnswer === this.questions.length) {
+        
+        else if (final === this.questions[this.currentQuestion]) {
             this.renderResultView();
         }
     }
@@ -60,11 +64,15 @@ class Quiz {
             }
             this.toggleCheckbox(false, answer);
         }
-        if (this.correctAnswer + this.falseAnswer === this.questions.length) {
+        let final = this.questions[this.questions.length - 1]
+        if (final === this.questions[this.currentQuestion]) {
+            
             this.toggleCompleteButton(true);
         }
         else {
             this.toggleCompleteButton(false);
+            
+            
         }
     }
     toggleCheckbox(disable, answer) {
@@ -72,7 +80,7 @@ class Quiz {
         cbxs.forEach(function (cbx) {
             if (disable) {
                 if (cbx.id !== answer) {
-                    cbx.disabled = true;
+                    cbx.disabled = false;
                 }
                 else {
                     cbx.disabled = false;
@@ -83,6 +91,8 @@ class Quiz {
             }
         });
     }
+
+
     toggleQuestion(prev) {
         const content = document.getElementById('content');
         content.innerHTML = "";
@@ -223,7 +233,7 @@ class Quiz {
 
 
 
-        const filterInput = document.createElement("input");
+        
         filterInput.id = "filter";
         filterInput.type = "number";
         filterInput.placeholder = " Select number of questions"
@@ -247,9 +257,11 @@ class Quiz {
     renderResultView() {
         const content = document.getElementById("content");
         content.innerHTML = "";
-
+        
+        console.log(this.correctAnswer + this.falseAnswer);
+        let totalScore = this.correctAnswer + this.falseAnswer;
         const label = document.createElement('label');
-        label.innerHTML = `Du hade ${this.correctAnswer} av ${this.questions.length} rätt`;
+        label.innerHTML = `Du fick ${this.correctAnswer} score av ${totalScore}`;
         label.id ="scoreLabel"
         score.append(label);
         
@@ -258,4 +270,5 @@ class Quiz {
 
         this.nextQuestion();
     }
+    
 }
